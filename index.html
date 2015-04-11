@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Add New Student</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/jquery-ui.min.css" /> <!-- css ui core library v.1.11.4-->
+    
+    <script src="scripts/jquery.js"></script><!-- javascript core library, must initialize before ui library v.1.11.4-->
+    <script src="scripts/jquery-ui.min.js"></script>
+    <!-- jquery accordion function-->
+    <script>
+        $(function() {
+        $( "#accordion" ).accordion();
+        });
+    </script>
+</head>
+<body>
+
+    <form action="input.php" method="post">
+
+    <h1>Add New Student</h1>
+  
+    <div id="accordion"><!--works! dont touch-->
+        <h3>Student Information</h3>
+        <div>
+            Banner ID: <input id="UNM ID" [type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="UNM_ID" maxlength="9" formmethod="post" size="10">
+                <p>Last Name: <input id="Last Name" type="text" name="last_name" formmethod="post" size="10">
+                First Name: <input id="First Name" type="text" name="first_name" formmethod="post" size="10">
+                Middle Inital: <input id="Middle Inital" type="text" name="middle_name" size="2" formmethod="post" width="5">
+                Birth Date: <input id="Birthday" type="date" placeholder = "mm/dd/yyyy" name="birth_date" formmethod="post" size="11">
+                <p>Campus: <select>
+                                <option value="Main">Main</option>
+                                <option value="Westside">Westside</option>
+                            </select><br>
+
+                Comments: <br> <textarea id="comments" name="comments" rows="10" cols="20" frommethod="post"  wrap="soft"></textarea></p>
+            </div> <!--end of first accordion-->
+
+            
+                <h3>Student Status</h3>
+                <div>
+                    Admission Status:<select>
+                        <option value="Status_A">Status_A</option>
+                        <option value="Status_B">Status_B</option>
+                        </select>
+                    
+                    <p>Transfer Student State: <input id="transfer" type="text" name="transfer_state" formmethod="post" size="10 ">
+                    <p>Transfer Student Country: <input id="transfer_int" type="text" name="country" formmethod="post" size="10">
+                    <p>Student Status: <input id="Student Status" type="text" name="student_status" formmethod="post" size="4">
+                    <p>Semester Applied: <input id="Semester Applied" type="number" name="application_semester_code" formmethod="post" size="4"> Year: <input id="Applied Year" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="applied_year" formmethod="post" maxlength="4" size="10">
+                    <p>Semester Admitted: <input id="Semester Admitted" type="text" name="semester_admitted" formmethod="post" size="4"> 
+                    <input id="Adm_Sem_Code" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="sem_adm_code" formmethod="post" maxlength="2" size="10"> 
+                    Year: <input id="Admitted Year" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="adm_year" formmethod="post" maxlength="4" size="10">
+                    <p>Admitted As:<input id="Admitted as" type="text" name="admission_as" formmethod="post" size="10">
+                    <p>Semester Graduated: <input id="Semester Graduated" type="text" name="graduation_semester_code" formmethod="post" size="10"> 
+                    <input id="Grad_Sem_Code" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="graduation_semester" formmethod="post" maxlength="2" size="10"> 
+                    Year: <input id="Graduated Year" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="graduated_year" formmethod="post" maxlength="4" size="10">
+                    <p>Entrance GPA: <input id="Ent_GPA" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="entrance_GPA" formmethod="post" size="10"> 
+                    Exit GPA: <input id="Exit_GPA" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="exit_GPA" formmethod="post" size="10"></p>
+                </div><!--end of second accordion-->
+                    
+                    <h3>Academic Information</h3>
+                    <div>
+                    <p>Major 1:<input id="Major 1" type="text" name="major_1" formmethod="post" size="20" /> 
+                    Minor 1:<input id="Minor 1" type="text" name="minor_1" formmethod="post" size="20" /> Concentration 1:<input id="Concentration 1" type="text" name="concentration_1" formmethod="post" size="20" />
+                    <p>Major 2:<input id="Major 2" type="text" name="major_2" formmethod="post" /> Minor 2:<input id="Minor 2" type="text" name="minor_2" formmethod="post" /> Concentration 2:<input id="Concentration 2" type="text" name="concentration_2" formmethod="post" size="20" />
+                    <p>College Orientation:<input id="Coll Orient" type="checkbox" name="orientation_college" formmethod="post" /> Date:<input id="Coll Orient Date" type="date" name="orientation_college_date" formmethod="post" size="20" />
+                    <p>Program Orientation:<input id="Prog Orient" type="checkbox" name="orientation_program" formmethod="post" /> Date:<input id="Program Orient Date" type="date" name="orientation_program_date" formmethod="post" size="20" />
+
+
+                    <h3>License Information</h3>
+                    <div>
+                    <p>Licensure Completion:
+                    <input id="Liccom_y_n" type="checkbox" name="licensure_completion" formmethod="post" maxlength="1" /> 
+                    Dual License:<input id="dual_y_n" type="checkbox" name="dual_licensure" formmethod="post" maxlength="1" /> </p> <p>License Completion Type:
+                    <input id="Liccomtype" type="text" name="licensure_completion_type" formmethod="post" /> </p>
+                    <p>License Obtained:
+                    <input id="Licobt_y_n" type="checkbox" name="license_obtained"  formmethod="post" maxlength="1" /> 
+                    <p> Date of Obtained License: Month: 
+                    <input id="month_got_lic" type="month" name="license_obtained_month" formmethod="post" /> Year: 
+                    <input id="year_got_lic" input[type=number]::-webkit-outer-spin-button {-webkit-appearance none;margin 0;} name="license_obtained_year" class="one" formmethod="post" /></p>
+
+                </div>
+                <input type="reset" value="reset" name="reset" />
+                <input type="submit" value="submit" name="submit" />
+
+    </form>
+</body>
+</html>
