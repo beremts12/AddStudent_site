@@ -1,8 +1,14 @@
+
+
 body {
 	font-family: Arial;
 	background-color: rgb(230,230,230); 
 }
 h1 {
+	font-family: Arial;
+	color: red;
+}
+#start_header{
 	font-family: Arial;
 	color: red;
 }
