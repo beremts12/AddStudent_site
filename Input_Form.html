@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Add New Student</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+</head>
+
+    <style> h1 {text-align:center}</style>
+
+<link rel="stylesheet" type="text/css" href="Input.css">
+<body>
+    <form action="input.php" method="post"></form>
+
+ <div class="container-fluid">
+     <div class="jumbotron">
+            <h1>Add New Student</h1>
+     </div>
+                           
+                <ul class="nav nav-tabs" data-tab="tabs" role="tablist">
+                    <li class="active" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1" data-toggle="tab">Student Information</a></li>
+                    <li class="tab-title" ><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" controls="panel2-2" data-toggle="tab">Student Status</a></li>
+                    <li class="tab-title" ><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" controls="panel2-3" data-toggle="tab">Academic Plan</a></li>
+                    <li class="tab-title" ><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" controls="panel2-4" data-toggle="tab">License Information</a></li>
+                </ul>
+                <div id="add-tab-content" class="tabs-content">
+                    
+                    <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+
+                        <h3>Student Information</h3>
+                        </p>Banner ID:<input id="UNM ID" type="number" name="UNM_ID" maxlength="9" formmethod="post" size="10"/> </p>
+                        </p>Last Name:<input id="Last Name" type="text" name="last_name" formmethod="post" size="10" /></p>
+                        </p>First Name:<input id="First Name" type="text" name="first_name" formmethod="post" size="10" /> </p>
+                        </p>Middle Inital: <input id="Middle Inital" type="text" name="middle_name" size="2" formmethod=" post" width="5" size="10" /> Birth Date: <input id="Birthday" type="date" name="birthdate" formmethod="post" size="10"></p>
+                        </p>Campus:<input id="campus" type="text" name="campus" formmethod="post" size="10 /></p>
+                        </p>Comments:<input id="comments" name="comments" spellcheck="true" contenteditable="inherit" wrap="soft" itemprop="comment" size="40" maxlength=" 500" height="50" /> </p>
+
+                      <ul class="pager">
+                            <li class="previous"><a href="#">Previous</a></li>
+                      </ul>
+
+                    </section>
+
+                    <section role="tabpanel" aria-hidden="true" class="content " id="panel2-2">
+
+                        <h3>Student Status</h3>
+                        </p>Admission Status:<input id="Admit Status" type="text" name="adm_status_code" size="2" maxlength="2" formmethod="post" /> </p>
+                        </p>Transfer Student State:<input id="transfer" type="text" name="transfer_state" formmethod="post" size="10 "/> </p>
+                        </p>Transfer Student Country:<input id="transfer_int" type="text" name="country" formmethod="post" size="10" /></p>
+                        </p>Student Status:<input id="Student Status" type="text" name="student_status" formmethod="post" size="4" /></p>
+                        </p>Semester Applied:<input id="Semester Applied" type="text" name="semester_applied" formmethod="post" size="4"  />  <input id="App_Sem_Code" type="number" name="application_semester_code" formmethod="post" maxlength="2" size="10" /> Year: <input id="Applied Year" type="number" name="applied_year" formmethod="post" maxlength="4" size="10" /></p>
+                        </p>Semester Admitted:<input id="Semester Admitted" type="text" name="semester_admitted" formmethod="post" size="4" /> <input id="Adm_Sem_Code" type="number" name="sem_adm_code" formmethod="post" maxlength="2" size="10" /> Year: <input id="Admitted Year" type="number" name="adm_year" formmethod="post" maxlength="4" size="10" /></p>
+                        </p>Semester Graduated:<input id="Semester Graduated" type="text" name="gradation_semester_txt" formmethod="post" size="10" /> <input id="Grad_Sem_Code" type="number" name="graduation_semester" formmethod="post" maxlength="2" size="10" /> Year: <input id="Graduated Year" type="number" name="graduated_year" formmethod="post" maxlength="4" size="10" /></p>
+                        </p>Entrance GPA: <input id="Ent_GPA" type="number" name="entrance_GPA" formmethod="post" size="10" /> Exit GPA: <input id="Exit_GPA" type="number" name="exit_GPA" formmethod="post"> size="10"</p>
+                       
+                        <ul class="pager">
+                            <li class="previous"><a href="#">Previous</a></li>
+                        </ul>
+
+                    </section>
+
+                    <section role="tabpanel" aria-hidden="true" class="content " id="panel2-3">
+
+                        <h3>Academic Information</h3>
+                        </p>Major 1:<input id="Major 1" type="text" name="major_1" formmethod="post" size="20" /> Minor 1:<input id="Minor 1" type="text" name="minor_1" formmethod="post" size="20" /> Concentration 1:<input id="Concentration 1" type="text" name="concentration_1" formmethod="post" size="20" /> </p>
+                        </p>Major 2:<input id="Major 2" type="text" name="major_2" formmethod="post" /> Minor 2:<input id="Minor 2" type="text" name="minor_2" formmethod="post" /> Concentration 2:<input id="Concentration 2" type="text" name="concentration_2" formmethod="post" size="20" /> </p>
+                        </p>College Orientation:<input id="Coll Orient" type="checkbox" name="orientation_college" formmethod="post" /> Date:<input id="Coll Orient Date" type="date" name="orientation_college_date" formmethod="post" size="20" /></p>
+                        </p>Program Orientation:<input id="Prog Orient" type="checkbox" name="orientation_program" formmethod="post" /> Date:<input id="Program Orient Date" type="date" name="orientation_program_date" formmethod="post" size="20" /></p>
+                        
+                        <ul class="pager">
+                            <li class="previous"><a href="#">Previous</a></li>
+                        </ul>
+
+                    </section>
+
+                    <section role="tabpanel" aria-hidden="true" class="content " id="panel2-4">
+
+                        <h3>License Information</h3>
+                        </p>Licensure Completion:<input id="Liccom_y_n" type="checkbox" name="licensure_completion" class="one" formmethod="post" maxlength="1"/> Dual License:<input id="dual_y_n" type="checkbox" name="dual_licensure" class="one" formmethod="post" maxlength="1" /> </p>License Completion Type:<input id="Liccomtype" type="text" name="licensure_completion_type" class="one" formmethod="post" /> </p>
+                        </p>License Obtained:<input id="Licobt_y_n" type="number" name="license_obtained" class="one" formmethod="post" maxlength="1" /> </p> </p>Date of Obtained License: Month: <input id="month_got_lic" type="month" name="license_obtained_month" class="one" formmethod="post" /> Year: <input id="year_got_lic" type="number" name="license_obtained_year" class="one" formmethod="post" /></p>
+                       
+                        <ul class="pager">
+                            <li class="previous"><a href="#">Previous</a></li>
+                        </ul>
+
+                    </section>
+                   
+             </div>               
+ </div>
+   
+
+        </form>      
+</body>
+</html>

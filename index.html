@@ -1,3 +1,5 @@
+<!--This project should be placed in your servers document_root directory. such as /htaccess
+-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,7 +12,7 @@
     
     <script src="scripts/jquery.js"></script><!-- javascript core library, must initialize before ui library v.1.11.4-->
     <script src="scripts/jquery-ui.min.js"></script>
-    <!-- jquery accordion function-->
+    <!-- jquery accordion UI function, jqury will allow cross-platform web browsers.-->
     <script>
         $(function() {
         $( "#accordion" ).accordion();
@@ -73,8 +75,7 @@
 
                     <h3>License Information</h3>
                     <div>
-                    <p>Licensure Completion:
-                    <input id="Liccom_y_n" type="checkbox" name="licensure_completion" formmethod="post" maxlength="1" /> 
+                    <p>Licensure Completion: <input id="Liccom_y_n" type="checkbox" name="licensure_completion" formmethod="post" maxlength="1" /> 
                     Dual License:<input id="dual_y_n" type="checkbox" name="dual_licensure" formmethod="post" maxlength="1" /> </p> <p>License Completion Type:
                     <input id="Liccomtype" type="text" name="licensure_completion_type" formmethod="post" /> </p>
                     <p>License Obtained:
